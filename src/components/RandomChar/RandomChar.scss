@@ -1,0 +1,60 @@
+@import '../../style/variables.scss';
+
+.randomchar {
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+    &__block {
+        padding: 40px 35px;
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+        flex: 1;
+        min-width: 0;
+    }
+    &__img {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 180px;
+    }
+    &__name {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 29px;
+        text-transform: uppercase;
+    }
+    &__descr {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    &__btns {
+        display: flex;
+        column-gap: 30px;
+    }
+    &__static {
+        padding: 40px 35px;
+        background-color: $dark;
+        position: relative;
+        flex: 1;
+        min-width: 0;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.045em;
+        color: #FFFFFF;
+        margin-bottom: 33px;
+    }
+    &__decoration {
+        position: absolute;
+        bottom: 14px;
+        right: -37px;
+    }
+}
