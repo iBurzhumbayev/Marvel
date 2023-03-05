@@ -26,8 +26,7 @@ const getResource = async (url: string) => {
     
         return response.data;
         } catch (error) {
-            console.log(error);
-            throw new Error(`Could not fetch ${url}`);
+            throw error;
         }
     };
 
